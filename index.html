@@ -8,13 +8,13 @@
     <style>
         /* Modern CSS Reset & Variables */
         :root {
-            --primary-color: #5d4a3e; /* Darker brown, reminiscent of wet plate tones */
-            --secondary-color: #a78872; /* Lighter brown/sepia */
-            --accent-color: #c9af92; /* Creamy highlight */
-            --text-dark: #2c2c2c;
-            --text-light: #fefefe;
-            --bg-light: #f8f5f1;
-            --bg-dark: #3a322e;
+            --primary-color: #333333; /* Dark gray */
+            --secondary-color: #666666; /* Medium gray */
+            --accent-color: #cccccc; /* Light gray */
+            --text-dark: #1a1a1a;
+            --text-light: #f0f0f0;
+            --bg-light: #f8f8f8;
+            --bg-dark: #222222;
             --font-heading: 'Playfair Display', serif;
             --font-body: 'Raleway', sans-serif;
         }
@@ -46,7 +46,7 @@
         /* Typography */
         h1, h2, h3 {
             font-family: var(--font-heading);
-            color: var(--primary-color);
+            color: var(--text-dark); /* Changed to dark grey for better visibility */
             margin-bottom: 0.5em;
         }
 
@@ -138,6 +138,7 @@
             text-align: center;
             color: var(--text-light);
             position: relative;
+            filter: grayscale(100%); /* Apply grayscale filter to the background image */
         }
 
         #welcome::before {
@@ -514,31 +515,24 @@
             <h2>Our Timeless Gallery</h2>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1579294523751-6c17f401f802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wet plate portrait of an elderly man">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Abraham_Lincoln_wet_plate_collodion_negative.jpg/800px-Abraham_Lincoln_wet_plate_collodion_negative.jpg" alt="Wet plate portrait of an elderly man">
                     <div class="gallery-item-content">
                         <h3>The Elder's Gaze</h3>
                         <p>A poignant portrait capturing a lifetime of stories in a single, striking image.</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1616781708816-cfc3f5d5b6a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wet plate photo of a vintage camera and equipment">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Wet_plate_collodion_camera_and_equipment.jpg/800px-Wet_plate_collodion_camera_and_equipment.jpg" alt="Wet plate photo of a vintage camera and equipment">
                     <div class="gallery-item-content">
                         <h3>Tools of the Trade</h3>
                         <p>An homage to the classic apparatus used in the wet plate collodion process.</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1542037101-b969116a4f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wet plate landscape of a serene forest">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Wet_plate_collodion_landscape.jpg/800px-Wet_plate_collodion_landscape.jpg" alt="Wet plate landscape of a serene forest">
                     <div class="gallery-item-content">
                         <h3>Forest Whispers</h3>
                         <p>The enchanting silence of nature beautifully translated through silver and light.</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1635835263687-3d1467f56677?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wet plate portrait of a young woman with intense gaze">
-                    <div class="gallery-item-content">
-                        <h3>Modern Vintage</h3>
-                        <p>A contemporary subject immortalized with the captivating texture of wet plate.</p>
                     </div>
                 </div>
             </div>
